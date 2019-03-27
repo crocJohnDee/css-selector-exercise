@@ -1,1 +1,1 @@
-# landing-page-1
+# css-selector-exercise
