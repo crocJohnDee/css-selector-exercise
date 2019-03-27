@@ -1,0 +1,265 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+hr {
+    margin-top: 2em;
+}
+
+/*  Q1 */
+
+#q1 table {
+    width: 191px;
+    margin: auto;
+    border-collapse: collapse;
+}
+  
+#q1 table td, table th {
+    border : 1px solid #555;
+    padding: 0.5em 0.5em 0.4em;
+}
+  
+#q1 table thead th {
+    color: white;
+    background: #333;
+}
+  
+#q1 -table tbody td {
+    text-align: center;
+}
+  
+#q1 table tbody tr:first-child + tr {
+    color: red;
+}
+  
+#q1 table tbody tr:nth-child(4) ~ tr {
+    color: blue;
+}
+
+/* Q2 */
+#q2 form {
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px #ccc solid;
+    width: 300px;
+}
+
+#q2 input[type="checkbox"] + span {
+    font-weight: bold;
+    font-style: italic;
+    color: blue;
+}
+
+#q2 input[name="chk2"] + span {
+    color: red;
+}
+
+#q2 form label {
+    display: block;
+    padding-bottom: 10px;
+}
+
+/* Q3 */
+
+#q3 .standout {
+    font-weight: bold;
+    font-style: italic;
+}
+
+#q3 a {
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+#q3 a[target] {
+    background-color: gold;
+    border: 1px solid goldenrod;
+}
+
+#q3 a[fluffy] {
+    background-color: pink;
+        border: 1px solid hotpink;
+}
+
+input[type="checkbox"] + span {
+    font-weight: bold;
+    font-style: italic;
+    color: blue;
+}
+
+#q3 input[name="chk2"] + span {
+    color: red;
+}
+
+#q3 form label {
+    display: block;
+    padding-bottom: 10px;
+}
+
+/* Q4 */
+#q4 div{
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#q4 img:not([alt]) { 
+    border: 2px red dashed; 
+}
+
+/* Q5 */
+
+#q5 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#q5 .case-insensitive[title|="tree" i] {
+    color: goldenrod;
+    font-style: italic;
+}
+
+#q5 .case-sensitive[title|="tree"] {
+    color: blue;
+    font-weight: bold;
+}
+
+/* Q6 */
+#q6 form {
+    width: 200px;
+    margin: 0 auto;
+}
+
+#q6 input[type=checkbox] {
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+/* if the checkbox is checked */
+#q6 input[type=checkbox]:checked + label {
+  text-decoration: line-through;
+}
+
+/* Q7 */
+#q7 form {
+    width: 220px;
+    margin: 0 auto;
+}
+
+#q7 button {
+    margin-left: 3px;
+    margin-top: 5px;
+    padding: 5px 10px;
+}
+
+#q7 input[type=checkbox] {
+  margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+/* :default matches one or more elements 
+that is the default in a group of 
+related elements. This can be combined 
+with the reset button type too. */
+#q7 form input:default + label {
+    font-weight: bold;
+}
+
+#q7 form input:default + label:after {
+    content: " (default)";
+    font-style: italic;
+    font-weight: normal;
+    color: #000;
+    font-size: 0.8em;
+}
+
+/* Q8 */
+
+#q8 form {
+    width: 330px;
+    margin: 0 auto;
+    border: 1px solid red;
+    padding: 25px;
+    line-height: 30px;
+}
+
+/* if the required input is not filled in, the form is invalid */
+#q8 form:invalid {
+  border: 1px solid rgba(255,0,0,0.7);
+}
+
+/* place an error string after the form if the form is invalid  */
+#q8 form:invalid:after {
+    position: relative;
+    top: 55px;
+    color: red;
+    content: "Form has errors";
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+/* if the input matches the requirments for the the input types the input is valid */
+#q8 input:valid {
+  background-color: rgba(0,255,0,0.2);
+}
+
+/* when all required inputs are filled in, the form is valid */
+#q8 form:valid {
+  border: 1px solid rgba(0,255,0,0.4);
+}
+
+/* if the input does not meet the requirments for the the input types, the input is invalid */
+#q8 input:invalid {
+    background-color: rgba(255,0,0,0.2);
+    color: #fff;
+}
+
+#q8 input:required:invalid {
+  border-color: gold;
+}
+
+#q8 input[type=url]:optional {
+    background-color: #eee;
+}
+
+/* Q9 */
+#q9 {
+    width: 400px;
+    margin: 0 auto;
+}
+
+#q9 div {
+    padding: 15px;
+}
+
+/* read-only is the defaul and can be ignored */
+#q9 p:read-only { 
+    background: lightgray; 
+    padding: 15px;
+}
+
+/* :read-write targets the contenteditable attribute */
+#q9 div:read-write { 
+    background: coral; 
+    color: #fff; 
+}
+
+#q9 input {
+    border: 2px solid green;
+    padding: 5px;
+    margin: 10px 0 0 0;
+}
+
+/* So long the placeholdertext is shown, than ==> */
+#q9 input:placeholder-shown {
+    border-color:red;
+}
